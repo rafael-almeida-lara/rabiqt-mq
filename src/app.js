@@ -6,7 +6,7 @@ import { configureServer } from "/config";
 import { createRoutes } from '/routes';
 import { consumeMessages } from '/messages'
 const app = express();
-const port = 3000;
+const port = 3001;
 
 try {
   consumeMessages()
