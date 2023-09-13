@@ -1,0 +1,34 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "/config": "./src/config",
+          "/constants": "./src/constants",
+          "/errors": "./src/errors",
+          "/interactors": "./src/interactors",
+          "/mappers": "./src/mappers",
+          "/messages": "./src/messages",
+          "/middlewares": "./src/middlewares",
+          "/models": "./src/models",
+          "/repositories": "./src/repositories",
+          "/routes": "./src/routes",
+          "/use-cases": "./src/use-cases",
+          "/utils": "./src/utils",
+          "/validators": "./src/validators"
+        }
+      }
+    ]
+  ]
+}
